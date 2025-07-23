@@ -1,11 +1,11 @@
 {
-  "name": "html-css_circus",
+  "name": "project-circus-13",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/html-css_circus/",
+    "build": "vite build --base=/project-circus-13/",
     "preview": "vite preview"
   },
   "devDependencies": {
