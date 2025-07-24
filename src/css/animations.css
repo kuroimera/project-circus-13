@@ -1,1 +1,7 @@
-
+.join-button-header:hover {
+  background-color: rgba(13, 11, 10, 0.05);
+  border: solid 1px rgba(0, 0, 0, 0);
+}
+.join-button-header:focus {
+  background-color: transparent;
+}
