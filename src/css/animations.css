@@ -1,1 +1,6 @@
-
+.join-button-header:hover {
+  background-color: rgba(13, 11, 10, 0.05);
+}
+.join-button-header:focus {
+  background-color: transparent;
+}
