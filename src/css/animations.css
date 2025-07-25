@@ -1,11 +1,12 @@
-.join-button-header:hover {
-  background-color: rgba(13, 11, 10, 0.05);
+.join-button-header-menu:hover {
+  background-color: rgba(194, 217, 252, 0.5);
 }
+
+.join-button-header-menu:focus {
+  background-color: transparent;
+}
+
 .menu-container {
   transform: translateX(100%);
   transition: transform 0.3s;
-}
-
-.join-button-header:focus {
-  background-color: transparent;
 }

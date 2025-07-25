@@ -56,5 +56,7 @@ p {
 
 .section {
   padding: 64px 0;
+  display: flex;
+  justify-content: center;
   /* Падінги в хіро і футері інші, на них клас секції не ставимо */
 }
