@@ -1,3 +1,9 @@
+.join-button-header-menu {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .join-button-header-menu:hover {
   background-color: rgba(13, 11, 10, 0.05);
 }
@@ -12,6 +18,12 @@
 
 .menu-overlay.is-open .menu-container {
   transform: translateX(0);
+}
+
+.join-now-button-menu {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-now-button-menu:focus {
