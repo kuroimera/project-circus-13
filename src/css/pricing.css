@@ -1,1 +1,128 @@
 /* section 7 */
+.section-pricing {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.section-pricing-text {
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--text-color); 
+}
+.section-pricing-title {
+  font-family: var(--second-font);
+  font-weight: 700; 
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto 16px;
+  color: var(--text-color);
+}
+.section-pricing-subtitle {
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.section-pricing-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section-pricing-item {
+  flex: 0 0 100%;
+  background-color: #F8FBFE;
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-item-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.pricing-item-title {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+.pricing-item-price {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+}
+.pricing-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.pricing-btn {
+  width: 100%;
+  height: 46px;
+  border-radius: 100px;
+  border: 1px solid #C2D9FC;
+  background-color: #C2D9FC;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.pricing-btn:hover,
+.pricing-btn:focus {
+  background-color: rgba(13, 11, 10, 0.05);
+  color: #0D0B0A;
+  transform: scale(1.05);
+  outline: none;
+}
+
+/* --- Адаптив --- */
+@media (min-width: 768px) {
+  .section-pricing-list {
+    gap: 24px;
+  }
+  .section-pricing-item {
+    flex: 0 0 calc((100% - 24px) / 2);
+    padding: 16px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .section-pricing-list {
+    gap: 32px;
+  }
+  .section-pricing-item {
+    flex: 0 0 calc((100% - 2 * 32px) / 3);
+    padding: 32px;
+  }
+  .section-pricing {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .section-pricing-title {
+    font-size: 52px;
+  }
+}
