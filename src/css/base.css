@@ -61,3 +61,15 @@ p {
   justify-content: center;
   /* Падінги в хіро і футері інші, на них клас секції не ставимо */
 }
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .section {
+    padding: 112px 0;
+  }
+}
