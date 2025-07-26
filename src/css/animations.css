@@ -1,5 +1,6 @@
 .join-button-header-menu:hover {
   background-color: rgba(194, 217, 252, 0.5);
+  border: solid 1px rgba(194, 217, 252, 0.5);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
