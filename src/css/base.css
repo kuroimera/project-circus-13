@@ -1,7 +1,7 @@
 body {
   font-family: 'Sarabun', sans-serif;
   color: #0d0b0a;
-  background-color: #ffffff;
+  background-color: #f2fafa;
   word-break: break-word;
   overflow-wrap: break-word;
 }
@@ -24,7 +24,11 @@ img {
 
 a {
   text-decoration: none;
-  color: #2e2f42;
+  color: #0d0b0a;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
 }
 
 h1,
@@ -37,6 +41,13 @@ p {
   margin: 0;
 }
 
+p {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
 .container {
   width: 288px;
   margin: 0 auto;
@@ -45,5 +56,7 @@ p {
 
 .section {
   padding: 64px 0;
+  display: flex;
+  justify-content: center;
   /* Падінги в хіро і футері інші, на них клас секції не ставимо */
 }
