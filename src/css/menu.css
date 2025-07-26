@@ -48,14 +48,16 @@
 }
 
 .join-now-button-menu {
-  padding: 10px 0;
-  height: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #c2d9fc;
-  border: solid 1px #c2d9fc;
+  border: 1px solid #c2d9fc;
   border-radius: 100px;
+  padding: 10px 24px;
+  max-width: 329px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   font-weight: 500;
   line-height: 1.6;
