@@ -31,3 +31,23 @@
 .join-now-button-menu:focus {
   background-color: transparent;
 }
+
+-----hero---------
+.button-join:hover {
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+
+.button-join:focus {
+  background-color: transparent;
+}
+
+.button-learn:hover {
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+
+.button-learn:focus {
+  background-color: transparent;
+  border: #868584;
+}
