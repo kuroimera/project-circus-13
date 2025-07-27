@@ -8,8 +8,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  text-align: center;
   gap: 48px;
 }
 
@@ -24,18 +23,10 @@
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  text-align: center;
-  color: #0d0b0a;
-  text-align: center;
 }
 
 .subtitle-abt-us {
   font-family: 'Sarabun', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: #0d0b0a;
 }
 
 .list-abt-us {
@@ -63,16 +54,10 @@
   font-size: 24px;
   line-height: 1.4;
   letter-spacing: 0.01em;
-  color: #0d0b0a;
 }
 
 .text-abt-us {
   font-family: 'Sarabun', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: #0d0b0a;
 }
 
 .list-abt-us {
@@ -99,12 +84,9 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  color: #0d0b0a;
 }
 
 .button-abt-us:hover {
-  background-color: #c2d9fc;
-  opacity: 0.5;
 }
 .button-abt-us::after {
   content: '';
@@ -125,7 +107,6 @@
   }
 
   .section-why-abt-us {
-    padding: 40px 0 40px 0;
     background-color: #f2fafa;
   }
   .item-abt-us {
@@ -136,18 +117,21 @@
   }
 
   .list-abt-us {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 46.5px 24px; */
+    display: flex;
+    flex-wrap: wrap;
     gap: 46.5px 24px;
   }
 
   .item-abt-us {
+     width: calc(50% - 12px);
     margin-bottom: 0;
-    text-align: center;
   }
   .button-abt-us {
     width: 110px;
-    padding: 0; 
+    padding: 0;
   }
   .button-abt-us::after {
     content: 'now';
@@ -162,11 +146,10 @@
   }
 
   .section-why-abt-us {
-    padding: 112px 64px 112px 64px;
   }
 
   .title-abt-us {
-    font-size: 48px;
+    font-size: 52px;
   }
 
   .subtitle-abt-us {
@@ -174,14 +157,16 @@
   }
 
   .list-abt-us {
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;   */
     gap: 24px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .item-abt-us {
-    text-align: center;
+    width: calc(25% - 24px);
     gap: 24px;
   }
 
@@ -192,6 +177,5 @@
   }
 
   .button-abt-us {
-   
   }
 }
