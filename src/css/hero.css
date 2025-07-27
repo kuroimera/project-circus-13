@@ -48,11 +48,6 @@
     max-width: 423px;
 }
 
-.hero-text {
-    font-family:"Sarabun", sans-serif;
-
-}
-
 .hero-content {
     display: flex;
     flex-direction: column;
