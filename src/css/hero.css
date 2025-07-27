@@ -13,7 +13,7 @@
 }
 
 .hero-picture {
-    background-image: url(../img/hero/hero-mobile.webp);
+    background-image: url("/img/hero/hero-mobile.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
 @media screen and (min-resolution: 2x) {
   .hero-picture {
-    background-image:url("../img/hero/hero-mobile@2x.webp");
+    background-image:url("/img/hero/hero-mobile@2x.webp");
   }
 }
 
@@ -50,29 +50,22 @@
 
 .hero-text {
     font-family:"Sarabun", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
+
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .hero-button {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-
-.hero-button {
     font-family: "Sarabun", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 160%;
     text-align: center;
+    cursor: pointer;
 }
 
 .button-join {
@@ -82,6 +75,13 @@
     padding: 10px 24px;
     max-width: 329px;
     height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 16px;
+    letter-spacing: 0;
 }
 
 .button-learn {
@@ -91,22 +91,26 @@
     padding: 10px 24px;
     max-width: 329px;
     height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 16px;
+    letter-spacing: 0;
 }
 
-.button-join:hover,
-.button-join:focus {
-    
-}
+
 
 @media screen and (min-width: 768px) {
   .hero-picture {
-    background-image: url(../img/hero/hero-tablet.webp);
+    background-image: url("/img/hero/hero-tablet.webp");
     min-height: 359px;
 }
 
 @media screen and (min-resolution: 2x) {
   .hero-picture {
-    background-image:url("../img/hero/hero-tablet@2x.webp");
+    background-image:url("/img/hero/hero-tablet@2x.webp");
   }
 }
 
@@ -130,16 +134,16 @@
 
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1336px) {
     .hero-picture {
-    background-image: url(../img/hero/hero-desktop.webp);
+    background-image: url("/img/hero/hero-desktop.webp");
     min-height: 684px;
     max-width: 1440px;
 }
 
 @media screen and (min-resolution: 2x) {
   .hero-picture {
-    background-image:url("../img/hero/hero-desktop@2x.webp");
+    background-image:url("/img/hero/hero-desktop@2x.webp");
   }
 }
 
