@@ -5,7 +5,7 @@
 }
 .footer-container{
     max-width: 343px;
-    height: 918px;
+    min-height: 918px;
     background-color: #f8fbfe;
     border: none;
     border-radius: 16px;
@@ -97,7 +97,7 @@
     }
     .footer-container {
         max-width: 704px;
-        height: 571px;
+        min-height: 571px;
         padding: 40px 32px;
         gap: 40px;
     }
@@ -125,7 +125,7 @@
     }
     .footer-container {
         max-width: 1312px;
-        height: 329px;
+        min-height: 329px;
         padding: 48px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -140,8 +140,8 @@
     .links-title-footer {
         width: 165.5px;
     }
-    /* .copyright-wrapper{
-       position: fixed;
-       margin-top: 212px;
-    } */
+    .copyright-footer{
+       /* position: fixed;
+       margin-top: 212px; */
+    }
 }
