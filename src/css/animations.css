@@ -32,7 +32,7 @@
   background-color: transparent;
 }
 
------hero---------
+/* -----hero--------- */
 .button-join:hover {
   opacity: 0.5;
   transition: transform 0.3s;
@@ -52,7 +52,7 @@
   border: #868584;
 }
 
----------about-us-----------
+/* ---------about-us----------- */
 /* .button-abt-us:hover,
 .button-abt-us:focus {
     background-color: #c2d9fc;
