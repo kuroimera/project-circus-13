@@ -2,16 +2,18 @@
 .our-team-section {
     background-color: #f2fafa;
 }
+
 .our-team-subtitle {
-   font-family: "Sarabun", sans-serif;
-   font-size: 16px;
-   color: #0d0b0a;
-   line-height: 1.5;
+    font-family: "Sarabun", sans-serif;
+    font-size: 16px;
+    color: #0d0b0a;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.01em;
     font-weight: 600;
     margin-bottom: 16px;
 }
+
 .our-team-title {
     color: #0d0b0a;
     font-size: 40px;
@@ -23,6 +25,7 @@
     margin-bottom: 24px;
     font-family: "Cabin", sans-serif;
 }
+
 .our-team-description {
     font-size: 18px;
     text-align: center;
@@ -36,7 +39,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 24px;
 }
@@ -44,14 +47,13 @@
 .our-team-item {
     box-sizing: content-box;
     background-color: #f2fafa;
-    
     width: 100%;
-        height: auto;
-        flex-basis: calc((100% - 24px) / 4);
-        border-radius: 16px;
-        overflow: hidden;
+    height: auto;
+    flex-basis: calc((100% - 24px) / 4);
+    border-radius: 16px;
+    overflow: hidden;
 }
-   
+
 
 
 .our-team-name {
@@ -74,6 +76,7 @@
     text-align: center;
     margin-bottom: 16px;
 }
+
 .our-team-text {
     font-family: "Sarabun", sans-serif;
     font-size: 16px;
@@ -83,6 +86,7 @@
     text-align: center;
     margin-bottom: 24px;
 }
+
 .text-about-our-team {
     padding: 24px 0;
 }
@@ -96,7 +100,7 @@
     list-style: none;
 }
 
- .our-team-social-icon {
+.our-team-social-icon {
     padding: 3px 3px;
     border-radius: 50%;
     display: flex;
@@ -104,7 +108,7 @@
     justify-content: center;
     width: 24px;
     height: 24px;
-    
+
 }
 
 
@@ -112,21 +116,27 @@
 
 
 @media screen and (min-width: 768px) {
-   .team-card-item {
-    width: 340;
-   }
+    .team-team-item {
+        width: 340px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
 }
 
 
 @media screen and (max-width: 767px) {
     .team-card-item {
-            width: 343px;
-            height: 221px;
-        }
-        .our-team-name {
-            font-size: 18px;
-        }
-        .our-team-position {
-            font-size: 16px;
-        }
+        width: 343px;
+        height: 221px;
+    }
+
+    .our-team-name {
+        font-size: 18px;
+    }
+
+    .our-team-position {
+        font-size: 16px;
+    }
+    .our-team-item {
+        flex-basis: 100%;
+    }
 }
