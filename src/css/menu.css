@@ -1,0 +1,72 @@
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.menu-container {
+  position: relative;
+  padding: 14px 16px 160px 16px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2fafa;
+}
+
+.menu-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-part-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.close-menu-button {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.navigation-panel-list-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 288px;
+}
+
+.join-now-button-menu {
+  background-color: #c2d9fc;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 24px;
+  max-width: 329px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  line-height: 1.6;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .join-now-button-menu {
+    width: 204px;
+  }
+}
