@@ -90,15 +90,15 @@
     opacity: 1;
     background-color: rgba(13, 11, 10, 0.05);
     font-weight: 500;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
-.footer-form-btn:focus{
+/* .footer-form-btn:focus{
     background-color: transparent;
-    border: 1px solid #0d0b0a;
+    border: 1px solid #868584;
 }
 .footer-form-btn:hover{
     opacity: 0.5;
-}
+} */
 .footer-form-consent{
     font-size: 12px;
 }
