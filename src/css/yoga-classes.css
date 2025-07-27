@@ -99,68 +99,66 @@
 
 
 /* ul list-yoga-classes */
+
 .list-yoga-classes {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 48px;
-    max-width: 1200px;
-    margin: 0 auto;
-    }
-
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+}
 
 .item-yoga-classes {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 48px;
+    width: 100%;
 }
 
 .program-image-yoga-classes {
     border-radius: 16px;
-    object-fit: cover;
+    overflow: hidden;
 }
 
 .text-block-yoga-classes {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .list-yoga-classes {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap: 24px;
+        }
+    
+        .item-yoga-classes {
+            width: calc(50% - 24px);
+            /* Две карточки в ряд */
+        }
+    
+        .item-yoga-classes:nth-child(3) {
+            width: 100%;
+            /* Третья карточка на всю ширину */
+            margin-top: 48px;
         }
 
 }
 
-
-@media screen and (min-width: 1136px) {
+@media (min-width: 1158px) {
     .list-yoga-classes {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 24px;
-    }
-    .item-yoga-classes{
-    width: calc((100% - 48px) / 3);
-}
-}
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 64px;
+        }
     
+        .item-yoga-classes {
+            width: auto;
+        }
+}
+
 
 
 /* button */
