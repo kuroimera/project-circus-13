@@ -1,1 +1,132 @@
 /* section 3 */
+.our-team-section {
+    background-color: #f2fafa;
+}
+.our-team-subtitle {
+   font-family: "Sarabun", sans-serif;
+   font-size: 16px;
+   color: #0d0b0a;
+   line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.our-team-title {
+    color: #0d0b0a;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 24px;
+    font-family: "Cabin", sans-serif;
+}
+.our-team-description {
+    font-size: 18px;
+    text-align: center;
+    color: #0d0b0a;
+    text-transform: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.our-team-item {
+    box-sizing: content-box;
+    background-color: #f2fafa;
+    
+    width: 100%;
+        height: auto;
+        flex-basis: calc((100% - 24px) / 4);
+        border-radius: 16px;
+        overflow: hidden;
+}
+   
+
+
+.our-team-name {
+    color: #0d0b0a;
+    font-family: "Sarabun", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.6;
+    letter-spacing: 0.00em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.our-team-position {
+    font-family: "Sarabun", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.00em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.our-team-text {
+    font-family: "Sarabun", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.00em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.text-about-our-team {
+    padding: 24px 0;
+}
+
+.our-team-social {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 8px;
+    padding: 0 16px;
+    list-style: none;
+}
+
+ .our-team-social-icon {
+    padding: 3px 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+   .team-card-item {
+    width: 340;
+   }
+}
+
+
+@media screen and (max-width: 767px) {
+    .team-card-item {
+            width: 343px;
+            height: 221px;
+        }
+        .our-team-name {
+            font-size: 18px;
+        }
+        .our-team-position {
+            font-size: 16px;
+        }
+}
