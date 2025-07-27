@@ -1,5 +1,12 @@
+.join-button-header-menu {
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .join-button-header-menu:hover {
   background-color: rgba(194, 217, 252, 0.5);
+  border: solid 1px rgba(194, 217, 252, 0.5);
 }
 
 .join-button-header-menu:focus {
@@ -11,8 +18,21 @@
   transition: transform 0.3s;
 }
 
+.menu-overlay.is-open .menu-container {
+  transform: translateX(0);
+}
 
+.join-now-button-menu {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.join-now-button-menu:focus {
+  background-color: transparent;
+}
+
+-----hero---------
 .button-join:hover {
   opacity: 0.5;
   transition: transform 0.3s;
@@ -29,4 +49,5 @@
 
 .button-learn:focus {
   background-color: transparent;
+  border: #868584;
 }
