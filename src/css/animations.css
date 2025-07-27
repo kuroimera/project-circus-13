@@ -1,14 +1,58 @@
-.join-button-header:hover {
-  background-color: rgba(13, 11, 10, 0.05);
+.join-button-header-menu {
+  transition-property: background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.join-button-header-menu:hover {
+  background-color: rgba(194, 217, 252, 0.5);
+  border: solid 1px rgba(194, 217, 252, 0.5);
+}
+
+.join-button-header-menu:focus {
+  background-color: transparent;
+}
+
 .menu-container {
   transform: translateX(100%);
   transition: transform 0.3s;
 }
 
-.join-button-header:focus {
+.menu-overlay.is-open .menu-container {
+  transform: translateX(0);
+}
+
+.join-now-button-menu {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-now-button-menu:focus {
   background-color: transparent;
 }
+
+-----hero---------
+.button-join:hover {
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+
+.button-join:focus {
+  background-color: transparent;
+}
+
+.button-learn:hover {
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+
+.button-learn:focus {
+  background-color: transparent;
+  border: #868584;
+}
+
+---------about-us-----------
 /* .button-abt-us:hover,
 .button-abt-us:focus {
     background-color: #c2d9fc;
