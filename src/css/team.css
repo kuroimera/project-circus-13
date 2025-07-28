@@ -2,7 +2,7 @@
 .our-team-section {
     background-color: #f2fafa;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 767px) {
     .our-team-container {
         max-width: 375px;
     }
@@ -98,6 +98,7 @@
 @media screen and (min-width: 768px) {
     .our-team-item {
         width: 340px;
+        height: 395px;
         flex-basis: calc((100% - 24px) / 2);
     }
         .our-team-name {
@@ -118,6 +119,7 @@
 @media screen and (min-width: 1336px) {
     .our-team-item {
         width: 340px;
+        height: 395px;
             flex-basis: calc((100% - 24px) / 4);
         }
     
