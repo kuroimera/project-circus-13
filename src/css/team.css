@@ -136,4 +136,10 @@
         .our-team-text {
             margin-bottom: 24px;
         }
+        .team-card-image img {
+            width: 421.33px;
+            height: 395px;
+            object-fit: cover;
+            display: block;
+        }
 }
