@@ -98,7 +98,6 @@
 @media screen and (min-width: 768px) {
     .our-team-item {
         width: 340px;
-        height: 395px;
         flex-basis: calc((100% - 24px) / 2);
     }
         .our-team-name {
@@ -118,8 +117,7 @@
 
 @media screen and (min-width: 1336px) {
     .our-team-item {
-            width: 421.33px;
-            height: 395px;
+        width: 340px;
             flex-basis: calc((100% - 24px) / 4);
         }
     
