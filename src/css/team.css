@@ -2,7 +2,7 @@
 .our-team-section {
     background-color: #f2fafa;
 }
-@media screen and (max-width: 767px) {
+
     
 .our-team-subtitle {
     line-height: 1.5;
@@ -107,6 +107,9 @@
          .our-team-description {
              margin-bottom: 48px;
          }
+        .our-team-list {
+            flex-direction: row;
+        }
          .our-team-subtitle {
             margin-bottom: 16px;
          }
