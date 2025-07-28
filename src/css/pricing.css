@@ -1,49 +1,36 @@
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-/* ===== PRICING SECTION ===== */
-.pricing-section {
+/* .pricing-section {
   padding: 64px 0;
   text-align: center;
-}
+} */
 .subheading {
-  font-family: 'Sarabun', sans-serif;
   font-weight: 600;
   font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 24px;
+  line-height: 1.5;
+  margin-bottom: 12px;
   text-align: center;
 }
 .pricing-plan-h {
-  font-family: 'Cabin', sans-serif;
-  font-size: 52px;
-  font-weight: 400; 
+  font-family: Cabin, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
   line-height: 1.2;
-  letter-spacing: 0.52px;
-  margin-bottom: 32px;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
   text-align: center;
 }
 .description {
-  font-family: 'Sarabun', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   text-align: center;
-  line-height: 1.5;
   margin-bottom: 48px;
 }
 .pricing-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
   justify-content: center;
 }
 
-/* ===== CARD ===== */
 .pricing-card {
   position: relative;
   background-color: #dfebeb;
@@ -62,7 +49,10 @@
 }
 .card__title {
   font-family: Cabin, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  font-weight: 400;
 }
 .card__price {
   font-family: Cabin, sans-serif;
@@ -88,54 +78,65 @@
   font-size: 16px;
 }
 
-/* іконка 24×24 */
 .card-chek-svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
-/* ===== BUTTON ===== */
 .card-button {
   font-weight: 500;
   font-size: 16px;
   padding: 12px 24px;
-  border: none;
+  border: solid 1px #c2d9fc;
   border-radius: 100px;
   background-color: #c2d9fc;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-.card-button:hover {
-  background-color: rgba(194, 217, 252, 0.5);
 }
 
-.card-button:focus {
-  outline: none;
-  background-color: transparent;
-  border: 1px solid #C2D9FC;
-}
-
-/* кнопка завжди внизу картки */
 .default-join {
   position: absolute;
   bottom: 24px;
   left: 24px;
   right: 24px;
 }
-/* кнопка лише для планшета */
+
 .tablet-only {
   display: none;
   width: 100%;
   margin-top: 24px;
 }
 
-/* ===== TABLET ===== */
 @media (min-width: 768px) and (max-width: 1335px) {
+  .pricing-container {
+    gap: 24px;
+  }
+
+  .subheading {
+    margin-bottom: 16px;
+  }
+
+  .pricing-plan-h {
+    margin-bottom: 24px;
+  }
+
+  .description {
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__price {
+    font-size: 72px;
+  }
+
   .pricing-section {
     padding: 100px 0;
   }
-  
+
   .pricing-card {
     padding: 16px 16px 94px;
     gap: 32px;
@@ -165,7 +166,6 @@
   }
 }
 
-/* ===== DESKTOP ===== */
 @media (min-width: 1336px) {
   .pricing-section {
     padding: 112px 0;
@@ -177,15 +177,28 @@
     flex: 0 0 calc((100% - 80px) / 3);
     max-width: calc((100% - 80px) / 3);
   }
+
+  .description {
+    margin-bottom: 40px;
+  }
+
   .pricing-card.card--large {
     flex-direction: column;
     gap: 24px;
-    padding: 32px 24px 96px;
+    padding: 32px 32px 110px;
   }
   .pricing-card.card--large .tablet-only {
     display: none;
   }
   .pricing-card.card--large .default-join {
     display: block;
+  }
+
+  .card__title {
+    font-size: 22px;
+  }
+
+  .card__price {
+    font-size: 72px;
   }
 }

@@ -1,35 +1,44 @@
 <!-- section 1 -->
 <section class="hero-section" id="hero">
-    <div class="hero-picture">
+  <div class="hero-picture">
     <picture class="hidden-picture">
-        <source
-            srcset="/img/hero/hero-desktop.webp 1x, ./img/hero/hero-desktop@2x.webp 2x"
-            media="(min-width: 1158px)"
-        />
-        <source
-            srcset="/img/hero/hero-tablet.webp 1x, ./img/hero/hero-tablet@2x.webp 2x"
-            media="(min-width: 768px)"
-        />
-        <source
-            srcset="/img/hero/hero-mobile.webp 1x, ./img/hero/hero-mobile@2x.webp 2x"
-            media="(max-width: 767px)"
-        />
-        <img src="/img/hero/hero-desktop.webp" alt="Hero Image" />
+      <source
+        srcset="
+          /img/hero/hero-desktop.webp     1x,
+          ./img/hero/hero-desktop@2x.webp 2x
+        "
+        media="(min-width: 1158px)"
+      />
+      <source
+        srcset="
+          /img/hero/hero-tablet.webp     1x,
+          ./img/hero/hero-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          /img/hero/hero-mobile.webp     1x,
+          ./img/hero/hero-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img src="/img/hero/hero-desktop.webp" alt="Hero Image" />
     </picture>
+  </div>
+  <div class="hero-container container">
+    <h1 class="hero-title">Transform Your Life with Our Yoga Clases</h1>
+    <div class="hero-content">
+      <p class="hero-text">
+        Discover the harmony of mind and body through our expertly designed yoga
+        programs. Join a community dedicated to wellness and personal growth.
+      </p>
+      <div class="hero-button">
+        <a href="#pricing" class="button-join button-animate-blue">Join Now</a>
+        <a href="#gallery" class="button-learn button-animate-grey"
+          >Learn More</a
+        >
+      </div>
     </div>
-    <div class="hero-container container">
-         <h1 class="hero-title">
-                Transform Your Life with Our Yoga Clases
-        </h1>
-        <div class="hero-content">
-            <p class="hero-text">
-                    Discover the harmony of mind and body through our expertly designed yoga programs. 
-                    Join a community dedicated to wellness and personal growth.
-            </p>
-            <div class="hero-button">
-                <a href="#pricing" class="button-join">Join Now</a>
-                <a href="#gallery" class="button-learn">Learn More</a>
-            </div>
-        </div> 
-    </div>
+  </div>
 </section>

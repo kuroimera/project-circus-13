@@ -1,12 +1,12 @@
-<div class="menu-overlay">
+<div class="menu-overlay" id="menu">
   <!-- is-open -->
   <div class="container menu-container">
     <div class="nav-part-menu">
-      <button type="button" class="close-menu-button">
+      <a class="close-menu-button" href="#">
         <svg width="24" height="24">
           <use href="/img/icons.svg#icon-close"></use>
         </svg>
-      </button>
+      </a>
       <a class="logo-link-header" href="#">
         <svg class="logo-header" width="83.15" height="23.51">
           <use href="/img/icons.svg#icon-logo"></use>
@@ -39,6 +39,11 @@
       </li>
     </ul>
 
-    <a class="join-now-button-menu" href="#pricing">Join Now</a>
+    <a
+      class="join-now-button-menu"
+      href="#pricing"
+      onclick="document.getElementById('menu').classList.remove('is-open')"
+      >Join Now</a
+    >
   </div>
 </div>

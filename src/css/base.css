@@ -7,6 +7,10 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 ol {
   list-style-type: none;
