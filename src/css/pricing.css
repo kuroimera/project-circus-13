@@ -1,1 +1,191 @@
-/* section 7 */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== PRICING SECTION ===== */
+.pricing-section {
+  padding: 64px 0;
+  text-align: center;
+}
+.subheading {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.pricing-plan-h {
+  font-family: 'Cabin', sans-serif;
+  font-size: 52px;
+  font-weight: 400; 
+  line-height: 1.2;
+  letter-spacing: 0.52px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.description {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+/* ===== CARD ===== */
+.pricing-card {
+  position: relative;
+  background-color: #dfebeb;
+  border-radius: 16px;
+  padding: 32px 24px 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 1 100%;
+}
+.card__price-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.card__title {
+  font-family: Cabin, sans-serif;
+  font-size: 20px;
+}
+.card__price {
+  font-family: Cabin, sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+}
+.card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+}
+
+/* іконка 24×24 */
+.card-chek-svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* ===== BUTTON ===== */
+.card-button {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  background-color: #c2d9fc;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.card-button:hover {
+  background-color: rgba(194, 217, 252, 0.5);
+}
+
+.card-button:focus {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #C2D9FC;
+}
+
+/* кнопка завжди внизу картки */
+.default-join {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+}
+/* кнопка лише для планшета */
+.tablet-only {
+  display: none;
+  width: 100%;
+  margin-top: 24px;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) and (max-width: 1335px) {
+  .pricing-section {
+    padding: 100px 0;
+  }
+  
+  .pricing-card {
+    padding: 16px 16px 94px;
+    gap: 32px;
+    flex: 0 0 calc((100% - 40px) / 2);
+    max-width: calc((100% - 40px) / 2);
+  }
+  .pricing-card.card--large {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    padding: 86px 16px 86px;
+  }
+  .pricing-card.card--large .card__price-block {
+    flex: 0 0 calc((100% - 24px) / 2);
+    justify-content: space-between;
+  }
+  .pricing-card.card--large .card__features {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+  .pricing-card.card--large .default-join {
+    display: none;
+  }
+  .pricing-card.card--large .tablet-only {
+    display: block;
+  }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1336px) {
+  .pricing-section {
+    padding: 112px 0;
+    gap: 24px;
+  }
+  .pricing-card {
+    padding: 32px 32px 110px;
+    gap: 32px;
+    flex: 0 0 calc((100% - 80px) / 3);
+    max-width: calc((100% - 80px) / 3);
+  }
+  .pricing-card.card--large {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 24px 96px;
+  }
+  .pricing-card.card--large .tablet-only {
+    display: none;
+  }
+  .pricing-card.card--large .default-join {
+    display: block;
+  }
+}
