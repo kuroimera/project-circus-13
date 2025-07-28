@@ -1,294 +1,183 @@
-/* Основний контейнер секції з цінами */
-.section-pricing {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    text-align: center;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Підзаголовок секції */
-.section-pricing-text {
-    line-height: 1.5;
-    text-align: center;
-    display: block;
-    font-weight: 600;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-/* Головний заголовок секції */
-.section-pricing-title {
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    margin-bottom: 20px;
-    text-align: center;
+/* ===== PRICING SECTION ===== */
+.pricing-section {
+  padding: 64px 0;
+  text-align: center;
+}
+.subheading {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.pricing-plan-h {
+  font-family: Cabin, sans-serif;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+.description {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
 }
 
-/* Текст пыд заголовком */
-.section-pricing-text span {
-    display: block;
+/* ===== CARD ===== */
+.pricing-card {
+  position: relative;
+  background-color: #dfebeb;
+  border-radius: 16px;
+  padding: 32px 24px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 1 100%;
 }
-
-/* Список карток цінових планів */
-.section-pricing-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding: 0;
-    margin: 0 auto;
-    list-style: none;
-    max-width: 1300px;
-}
-
-/*Окрема картка цінового плану */
-.section-pricing-item {
-    border: 0px solid rgba(13, 11, 10, 0.15);
-    border-radius: 16px;
-    padding: 32px 24px;
-    width: 421px;
-    background-color: #dfebeb;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-/* Сховати версію для tablet за замовчуванням */
-.tablet {
-    display: none;
-}
-
-.pricing-item-container {
+.card__price-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-bottom: 24px;
+  gap: 8px;
+}
+.card__title {
+  font-family: Cabin, sans-serif;
+  font-size: 20px;
+}
+.card__price {
+  font-family: Cabin, sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+}
+.card__features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-/* Назва цінового плану */
-.pricing-item-title {
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    letter-spacing: 0.01em;
-    line-height: 1.4;
-    text-align: center;
-    margin-bottom: 8px;
-    margin-top: 0px;
+.features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
 }
 
-/* Ціна плану */
-.pricing-item-text {
-    font-family: 'Cabin', sans-serif;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    text-align: center;
-    margin-bottom: 24px;
-    margin-top: 0px;
+/* іконка 24×24 */
+.card-chek-svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
-/* Контейнер для вирівнювання контенту в середині картки */
-.pricing-item-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+/* ===== BUTTON ===== */
+.card-button {
+  font-weight: 500;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 100px;
+  background-color: #c2d9fc;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.card-button:hover {
+  background-color: rgba(194, 217, 252, 0.5);
 }
 
-/* Список переваг пакету */
-.pricing-package-list {
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    gap: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-bottom: 32px;
-    flex: 1;
+.card-button:focus {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #C2D9FC;
 }
 
-/* Окремий пункт переваги з іконкою */
-.pricing-package-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+/* кнопка завжди внизу картки */
+.default-join {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+}
+/* кнопка лише для планшета */
+.tablet-only {
+  display: none;
+  width: 100%;
+  margin-top: 24px;
 }
 
-/* Текст кожної переваги */
-.pricing-package-text {
-    font-family: 'Sarabun', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: left;
-    flex: 1;
-    margin: 0;
-}
-
-/* Кнопка "Join" */
-.pricing-package-btn {
-    width: 100%;
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-    padding: 10px 24px;
-    height: 46px;
-    background-color: #c2d9fc;
-    font-weight: 500;
-    transition-property: background-color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-}
-
-/* Ефекти наведення і фокусу для кнопки */
-.pricing-package-btn:hover {
-    background-color: rgba(194, 217, 252, 0.5);
-    border: solid 1px rgba(194, 217, 252, 0.5);
-    color: #000;
-    transform: scale(1.05);
-}
-
-.pricing-package-btn:focus {
-    background-color: transparent;
-    transform: scale(1.05);
-    color: #000;
-    border: 1px solid #c2d9fc;
-    outline: none;
-}
-
-/* Структура для tablet */
-.tablet-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 32px;
-}
-
-.tablet-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.tablet-right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    text-align: left;
-}
-
-/* Media-запити для адаптації */
-
-@media only screen and (min-width: 768px) {
-    .section-pricing-text {
-        margin-bottom: 16px;
-    }
-
-    .tablet {
-    display: none !important;
+/* ===== TABLET ===== */
+@media (min-width: 768px) and (max-width: 1335px) {
+  .pricing-section {
+    padding: 100px 0;
   }
-
-    .section-pricing-title {
-        margin-bottom: 24px;
-    }
-
-    .section-pricing-text span {
-        margin-bottom: 24px;
-    }
-
-    .section-pricing-list {
-        gap: 24px;
-    }
-
-    .section-pricing-item {
-        width: calc((100% - 24px) / 2);
-        padding: 16px;
-    }
-
-    .pricing-package-list.pricing-item-container {
-        margin-bottom: 0;
-    }
-
-    .mobile-desk {
-        display: none;
-    }
-
-    .section-pricing-list .section-pricing-item:last-child {
-        display: flex;
-        flex-grow: 1;
-        padding: 86px 16px;
-        justify-content: flex-start;
-        gap: 32px;
-    }
-
-    .tablet-item-container {
-        width: 50%;
-    }
-
-    .pricing-item-title {
-        font-size: 22px;
-    }
-
-    .pricing-item-text {
-        font-size: 44px;
-        margin-bottom: 24px;
-    }
+  .pricing-card {
+    flex: 0 0 calc((100% - 40px) / 2);
+    max-width: calc((100% - 40px) / 2);
+  }
+  .pricing-card.card--large {
+    flex: 0 0 100%;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 24px;
+    padding: 32px 40px 96px;
+  }
+  .pricing-card.card--large .card__price-block {
+    flex: 0 0 calc((100% - 24px) / 2);
+    justify-content: space-between;
+  }
+  .pricing-card.card--large .card__features {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+  .pricing-card.card--large .default-join {
+    display: none;
+  }
+  .pricing-card.card--large .tablet-only {
+    display: block;
+  }
 }
 
-@media only screen and (min-width: 1336px) {
-    .section-pricing {
-        padding-top: 112px;
-        padding-bottom: 112px;
-    }
-
-    .pricing-item-container {
-        min-height: 148px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        text-align: center;
-    }
-
-    .section-pricing-item {
-        width: calc((100% - 24px * 2) / 3);
-        padding: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .section-pricing-list .section-pricing-item:last-child {
-        display: none;
-    }
-
-    .mobile-desk {
-        display: flex;
-    }
-
-    .package-text-desk {
-        display: none;
-    }
-
-    .pricing-item-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .pricing-item-title {
-        margin-bottom: 8px;
-    }
-
-    .pricing-item-text {
-        margin-bottom: 32px;
-    }
+/* ===== DESKTOP ===== */
+@media (min-width: 1336px) {
+  .pricing-section {
+    padding: 112px 0;
+  }
+  .pricing-card {
+    flex: 0 0 calc((100% - 80px) / 3);
+    max-width: calc((100% - 80px) / 3);
+  }
+  .pricing-card.card--large {
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 24px 96px;
+  }
+  .pricing-card.card--large .tablet-only {
+    display: none;
+  }
+  .pricing-card.card--large .default-join {
+    display: block;
+  }
 }
