@@ -141,19 +141,9 @@
   display: inline;
 }
 
-.button-yoga-classes:hover {
-  background-color: rgba(194, 217, 252, 0.5);
-  border-color: #c2d9fc;
-}
-
-.button-yoga-classes:focus {
-  background-color: transparent;
-  border-color: #c2d9fc;
-}
-
 @media screen and (min-width: 768px) {
   .section-yoga-classes {
-    /* padding: 40px 32px; */
+    padding: 40px 32px;
     background-color: #f2fafa;
   }
 
