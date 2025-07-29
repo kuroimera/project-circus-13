@@ -133,10 +133,6 @@
     font-size: 72px;
   }
 
-  .pricing-section {
-    padding: 100px 0;
-  }
-
   .pricing-card {
     padding: 16px 16px 94px;
     gap: 32px;
@@ -167,10 +163,6 @@
 }
 
 @media (min-width: 1336px) {
-  .pricing-section {
-    padding: 112px 0;
-    gap: 24px;
-  }
   .pricing-card {
     padding: 32px 32px 110px;
     gap: 32px;
