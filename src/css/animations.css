@@ -1,11 +1,30 @@
-.join-button-header:hover {
-  background-color: rgba(13, 11, 10, 0.05);
-}
-.menu-container {
-  transform: translateX(100%);
-  transition: transform 0.3s;
+.button-animate-blue {
+  transition-property: background-color, border, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join-button-header:focus {
+.button-animate-blue:hover {
+  opacity: 0.5;
+}
+
+.button-animate-blue:focus {
   background-color: transparent;
+  opacity: 1;
+}
+
+.button-animate-grey {
+  transition-property: background-color, border, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-animate-grey:hover {
+  background-color: rgba(13, 11, 10, 0.028);
+  color: rgba(13, 11, 10, 0.5);
+}
+
+.button-animate-grey:focus {
+  background-color: transparent;
+  border: 1px solid #868584;
 }

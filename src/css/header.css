@@ -32,12 +32,9 @@
 .join-button-header-menu {
   padding: 4px 22px;
   background-color: #c2d9fc;
+  border: solid 1px #c2d9fc;
   border-radius: 100px;
-
   font-weight: 500;
-  line-height: 1.6;
-  font-size: 16px;
-  letter-spacing: 0;
 }
 
 .now-part-button-header-menu {

@@ -4,6 +4,11 @@ body {
   background-color: #f2fafa;
   word-break: break-word;
   overflow-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul,
@@ -56,5 +61,19 @@ p {
 
 .section {
   padding: 64px 0;
+  display: flex;
+  justify-content: center;
   /* Падінги в хіро і футері інші, на них клас секції не ставимо */
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .section {
+    padding: 112px 0;
+  }
 }
