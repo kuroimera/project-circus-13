@@ -9,7 +9,11 @@
   justify-content: center;
   margin: 0 auto;
   gap: 20px;
-  padding: 48px 0;
+  padding: 48px 0 0;
+}
+
+.hero-section {
+  padding: 0 0 48px;
 }
 
 .hero-picture {
@@ -107,10 +111,14 @@
     }
   }
 
+  .hero-section {
+    padding: 0 0 24px;
+  }
+
   .hero-container {
     width: 100%;
     max-width: 768px;
-    padding: 24px 145px 24px 32px;
+    padding: 24px 145px 0 32px;
     gap: 8px;
     align-items: flex-start;
   }
@@ -139,11 +147,15 @@
     }
   }
 
+  .hero-section {
+    padding: 0 0 80px;
+  }
+
   .hero-container {
     flex-direction: row;
     width: 100%;
     max-width: 1440px;
-    padding: 80px 64px;
+    padding: 80px 64px 0;
     gap: 24px;
     align-items: unset;
   }
