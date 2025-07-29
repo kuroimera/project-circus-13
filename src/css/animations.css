@@ -22,7 +22,7 @@
 .button-animate-grey:hover {
   background-color: rgba(13, 11, 10, 0.028);
   color: rgba(13, 11, 10, 0.5);
-
+}
 
 .button-animate-grey:focus {
   background-color: transparent;
