@@ -1,1 +1,302 @@
-/* secion 2 */
+.section-yoga-classes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 48px;
+  background-color: #dfebeb;
+}
+
+.yoga-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.yoga-section_subtitle {
+  margin-bottom: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.yoga-section_title {
+  margin-bottom: 20px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.program-title-yoga-classes {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.default-title {
+  display: block;
+}
+
+.tablet-title {
+  display: none;
+}
+
+.yoga-section_description {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.desktop-text {
+  display: none;
+}
+
+.tablet-text {
+  display: none;
+}
+
+.mobile-text {
+  display: block;
+}
+
+/* ul list-yoga-classes */
+.list-yoga-classes {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.item-yoga-classes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.program-image-yoga-classes {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.text-block-yoga-classes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.mobile-only {
+  display: inline;
+}
+
+.non-mobile {
+  display: none;
+}
+
+.item-yoga-classes picture,
+.item-yoga-classes img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* button */
+.button-yoga-classes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 343px;
+  height: 46px;
+  background-color: #c2d9fc;
+  margin: 48px auto 0;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button-yoga-classes {
+  width: 343px;
+  height: 46px;
+}
+
+.text-full {
+  display: none;
+}
+
+.text-short {
+  display: inline;
+}
+
+@media screen and (min-width: 768px) {
+  .section-yoga-classes {
+    padding: 40px 32px;
+    background-color: #f2fafa;
+  }
+
+  .yoga-section_subtitle {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .yoga-section {
+    margin-bottom: 40px;
+  }
+
+  .default-title {
+    display: none;
+  }
+
+  .tablet-title {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-yoga-classes {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .item-yoga-classes {
+    width: calc((100% - 24px) / 2);
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+
+  .item-yoga-classes:last-child {
+    width: 100%;
+  }
+
+  .text-block-yoga-classes {
+    gap: 0px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .non-mobile {
+    display: inline;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .tablet-text {
+    display: block;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
+  .yoga-section_description {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .yoga-section_title {
+    font-size: 52px;
+  }
+
+  .program-title-yoga-classes {
+    font-size: 36px;
+  }
+
+  .list-yoga-classes {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .item-yoga-classes {
+    width: calc((100% - 48px) / 3);
+    gap: 32px;
+  }
+
+  .item-yoga-classes:last-child {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .text-block-yoga-classes {
+    gap: 20px;
+  }
+
+  .full-description {
+    display: none;
+  }
+
+  .compact-description {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-yoga-classes {
+    width: 110px;
+    height: 46px;
+    margin: 0 auto;
+  }
+
+  .text-full {
+    display: inline;
+  }
+
+  .text-short {
+    display: none;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .tablet-text {
+    display: block;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
+  .yoga-section_description {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1336px) {
+  .desktop-text {
+    display: block;
+  }
+
+  .tablet-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
+  .default-title {
+    display: block;
+  }
+  .tablet-title {
+    display: none;
+  }
+}

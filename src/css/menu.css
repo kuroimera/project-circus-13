@@ -7,6 +7,19 @@
   opacity: 0;
   visibility: hidden;
   z-index: 999;
+  background-color: #f2fafa;
+
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu-overlay:not(:target) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-overlay:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu-container {
@@ -60,9 +73,6 @@
   justify-content: center;
 
   font-weight: 500;
-  line-height: 1.6;
-  font-size: 16px;
-  letter-spacing: 0;
 }
 
 @media screen and (min-width: 768px) {
